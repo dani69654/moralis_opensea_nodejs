@@ -1,5 +1,9 @@
 # Moralis OpenSea plugin - Node JS
 
+<p align="center">
+  <img src="./Moralis-Icon-Light.png" alt="moralis_logo" width="200"/>
+</p>
+
 This is a NodeJS implementation of the Moralis [OpenSea](https://moralis.io/plugins/opensea/) plugin. </br>
 Please refer to the [official documentation](https://github.com/MoralisWeb3/plugindocs/tree/main/opensea%20plugin) for more info. </br>
 The `index.js` file imports all useful modules.
