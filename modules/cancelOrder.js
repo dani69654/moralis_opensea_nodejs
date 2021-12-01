@@ -4,7 +4,7 @@ const Web3 = require('web3')
 
 const web3 = new Web3(env.ETHEREUM_RPC)
 
-const cancelOrder = async (_network, _userAddress, _order) => {
+module.exports = async (_network, _userAddress, _order) => {
   try {
     if (!_order || _order.length === 0) throw new Error('No orders to cancel')
     const { data } = await axios.post(`${env.SERVER_URL}/functions/opensea_cancelOrder`, {
@@ -27,5 +27,3 @@ const cancelOrder = async (_network, _userAddress, _order) => {
     throw new Error(error.message || error)
   }
 }
-
-module.exports = cancelOrder

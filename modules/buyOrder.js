@@ -3,7 +3,7 @@ const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3(env.ETHEREUM_RPC)
 
-const createBuyOrder = async (
+module.exports = async (
   _network,
   _tokenAddress,
   _tokenId,
@@ -61,5 +61,3 @@ const createBuyOrder = async (
     throw new Error(error.message || error)
   }
 }
-
-module.exports = createBuyOrder
